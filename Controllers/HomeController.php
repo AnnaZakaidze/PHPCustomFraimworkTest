@@ -12,7 +12,7 @@ class HomeController
             'data'=>[]
         ]);
     }
-    public function postContact(IRequest $request,Router $router)
+    public function postContact(\IRequest $request,\Router $router)
     {
         $errors=[];
         $data = $request->getBody();
