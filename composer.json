@@ -1,0 +1,15 @@
+{
+    "name": "ana/ph-pcustom-fraimwork",
+    "authors": [
+        {
+            "name": "Anna-Zakaidze",
+            "email": "annzakaidze17@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+      "psr-4": {
+          "app\\": "."
+      }
+    }
+}

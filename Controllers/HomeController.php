@@ -1,9 +1,10 @@
 <?php
 
+namespace app\Controllers;
 
 class HomeController
 {
-    public function contact(IRequest $request,Router $router)
+    public function contact(\IRequest $request,\Router $router)
     {
 
         return $router->getViewContent('contact',[
