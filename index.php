@@ -1,10 +1,10 @@
 <?php
-require_once __DIR__.'/Router.php';
-require_once __DIR__.'/Request.php';
-require_once __DIR__.'/Controllers/HomeController.php';
+require_once __DIR__.'/vendor/autoload.php';
 //echo "Hello world";
 
 use app\Controllers\HomeController;
+use app\Router;
+use app\Request;
 
 $router = new Router(new Request());
 $router->get('/','index');

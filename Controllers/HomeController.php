@@ -1,10 +1,11 @@
 <?php
 
 namespace app\Controllers;
-
+use app\IRequest;
+use app\Router;
 class HomeController
 {
-    public function contact(\IRequest $request,\Router $router)
+    public function contact(IRequest $request,Router $router)
     {
 
         return $router->getViewContent('contact',[
@@ -12,7 +13,7 @@ class HomeController
             'data'=>[]
         ]);
     }
-    public function postContact(\IRequest $request,\Router $router)
+    public function postContact(IRequest $request,Router $router)
     {
         $errors=[];
         $data = $request->getBody();

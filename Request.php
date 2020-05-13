@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/IRequest.php';
+namespace app;
 
 class Request implements IRequest
 {
